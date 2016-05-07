@@ -1,0 +1,7 @@
+<launch>
+
+	<include file="$(find csuro_robots)/launch/sonny.launch"/> 
+	
+	<node name="rviz" pkg ="rviz" type="rviz" args="-d /home/javi/.rviz/mycfg.rviz"/>	
+	
+</launch>

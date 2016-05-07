@@ -1,0 +1,8 @@
+<launch>
+
+	<include file="$(find csuro_robots)/launch/sim.launch"/>
+	<node name="node_image_line" pkg="follow_line" type="node_image_line"/>
+	<node name="kobuki_correcting" pkg="follow_line" type="kobuki_correcting"/>
+	<node name="rqt_plot" pkg="rqt_plot" type="rqt_plot"/>
+
+</launch>

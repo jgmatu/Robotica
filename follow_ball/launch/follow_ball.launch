@@ -1,0 +1,10 @@
+<launch>
+
+	<include file="$(find openni2_launch)/launch/openni2.launch"/>
+	<include file="$(find kobuki_node)/launch/minimal.launch"/>
+	<node name="node_image_ball" pkg="follow_ball" type="node_image_ball"/>
+	<node name="go_ball" pkg="follow_ball" type="go_ball"/>
+	<node name="rqt_plot" pkg="rqt_plot" type="rqt_plot"/>
+	
+</launch>
+
